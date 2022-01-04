@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="helow world"
+        android:textColor="#ff18be1c"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/EText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AppName"
+        android:hint="input" />
+
+    <EditText
+        android:id="@+id/EText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EText1"
+        android:hint="input" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EText2"
+        android:layout_centerHorizontal="true"
+        android:onClick="addNew"
+        android:text="submit"
+        android:textColor="#ff725fee" />
+
+    <ListView
+        android:id="@+id/newlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/button">
+
+    </ListView>
+</RelativeLayout>
